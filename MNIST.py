@@ -54,6 +54,6 @@ def train(epoch):
             train_loss_list.append(loss.item())
             train_count_list.append(idx*train_batch_size+(epoch-1)*len(train_dataloader))
 
-epoch = 10
+epoch = 50
 for i in range(epoch):
     train(i)
